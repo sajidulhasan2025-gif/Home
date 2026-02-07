@@ -52,7 +52,7 @@
     nav a:hover::after { width: 100%; }
 
     /* Sections */
-    section { min-height: 100vh; padding: 140px 80px; }
+    section { min-height: auto; padding: 80px 60px; }
 
     /* Hero */
     .hero {
@@ -63,25 +63,43 @@
       width: 220px; animation: float 4s ease-in-out infinite;
       filter: drop-shadow(0 0 40px rgba(0,234,255,0.6));
     }
-    .hero h2 { font-size: 64px; line-height: 1.2; animation: slideIn 1.2s ease forwards; }
+    .hero h2 {
+      font-size: 52px;
+      line-height: 1.2;
+      animation: slideIn 1.2s ease forwards;
+    }
     .hero span { color: #00eaff; }
-    .hero p { max-width: 600px; margin-top: 20px; color: #aaa; animation: fadeIn 2s ease forwards; }
+    .hero p {
+      max-width: 520px;
+      margin-top: 14px;
+      color: #aaa;
+      animation: fadeIn 2s ease forwards;
+    }
 
     /* Cards */
     .card-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px; margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
     }
     .card {
-      background: #111520; padding: 30px; border-radius: 16px;
-      transition: transform 0.3s, box-shadow 0.3s;
+      background: #111520;
+      padding: 20px;
+      border-radius: 14px;
+      transition: transform 0.25s, box-shadow 0.25s;
     }
     .card:hover {
       transform: translateY(-10px) scale(1.03);
       box-shadow: 0 0 30px rgba(0,234,255,0.3);
     }
 
-    footer { text-align: center; padding: 40px; color: #777; background: #090c12; }
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #777;
+      background: #090c12;
+    }
 
     /* Animations */
     @keyframes slideIn { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
